@@ -1,0 +1,624 @@
+{
+   "ArrayExpression": {
+      "lloc": {
+         "0": 2
+      },
+      "cyclomatic": {
+         "0": 2
+      },
+      "operators": {
+         "[{\"identifier\":\"[]\"}]": 2
+      },
+      "operands": {
+         "[]": 2
+      },
+      "ignoreKeys": {
+         "[]": 2
+      },
+      "newScope": {
+         "undefined": 2
+      },
+      "dependencies": {
+         "undefined": 2
+      }
+   },
+   "ArrowFunctionExpression": {
+      "lloc": {
+         "0": 3
+      },
+      "cyclomatic": {
+         "0": 3
+      },
+      "operators": {
+         "[{\"identifier\":\"arrowfunction\"}]": 3
+      },
+      "operands": {
+         "[]": 3
+      },
+      "ignoreKeys": {
+         "[]": 3
+      },
+      "newScope": {
+         "true": 3
+      },
+      "dependencies": {
+         "undefined": 3
+      }
+   },
+   "AssignmentExpression": {
+      "lloc": {
+         "0": 12
+      },
+      "cyclomatic": {
+         "0": 12
+      },
+      "operators": {
+         "[{}]": 12
+      },
+      "operands": {
+         "[]": 12
+      },
+      "ignoreKeys": {
+         "[]": 12
+      },
+      "newScope": {
+         "undefined": 12
+      },
+      "dependencies": {
+         "undefined": 12
+      }
+   },
+   "BinaryExpression": {
+      "lloc": {
+         "0": 22
+      },
+      "cyclomatic": {
+         "0": 22
+      },
+      "operators": {
+         "[{}]": 22
+      },
+      "operands": {
+         "[]": 22
+      },
+      "ignoreKeys": {
+         "[]": 22
+      },
+      "newScope": {
+         "undefined": 22
+      },
+      "dependencies": {
+         "undefined": 22
+      }
+   },
+   "BlockStatement": {
+      "lloc": {
+         "0": 13
+      },
+      "cyclomatic": {
+         "0": 13
+      },
+      "operators": {
+         "[]": 13
+      },
+      "operands": {
+         "[]": 13
+      },
+      "ignoreKeys": {
+         "[]": 13
+      },
+      "newScope": {
+         "undefined": 13
+      },
+      "dependencies": {
+         "undefined": 13
+      }
+   },
+   "BreakStatement": {
+      "lloc": {
+         "1": 3
+      },
+      "cyclomatic": {
+         "0": 3
+      },
+      "operators": {
+         "[{\"identifier\":\"break\"}]": 3
+      },
+      "operands": {
+         "[]": 3
+      },
+      "ignoreKeys": {
+         "[]": 3
+      },
+      "newScope": {
+         "undefined": 3
+      },
+      "dependencies": {
+         "undefined": 3
+      }
+   },
+   "CallExpression": {
+      "lloc": {
+         "0": 22
+      },
+      "cyclomatic": {
+         "0": 22
+      },
+      "operators": {
+         "[{\"identifier\":\"()\"}]": 22
+      },
+      "operands": {
+         "[]": 22
+      },
+      "ignoreKeys": {
+         "[]": 22
+      },
+      "newScope": {
+         "undefined": 22
+      },
+      "dependencies": {
+         "undefined": 22
+      }
+   },
+   "ConditionalExpression": {
+      "lloc": {
+         "0": 1
+      },
+      "cyclomatic": {
+         "1": 1
+      },
+      "operators": {
+         "[{\"identifier\":\":?\"}]": 1
+      },
+      "operands": {
+         "[]": 1
+      },
+      "ignoreKeys": {
+         "[]": 1
+      },
+      "newScope": {
+         "undefined": 1
+      },
+      "dependencies": {
+         "undefined": 1
+      }
+   },
+   "ExportDefaultDeclaration": {
+      "lloc": {
+         "0": 1
+      },
+      "cyclomatic": {
+         "0": 1
+      },
+      "operators": {
+         "[{\"identifier\":\"export\"},{\"identifier\":\"default\"}]": 1
+      },
+      "operands": {
+         "[]": 1
+      },
+      "ignoreKeys": {
+         "[]": 1
+      },
+      "newScope": {
+         "undefined": 1
+      },
+      "dependencies": {
+         "undefined": 1
+      }
+   },
+   "ExpressionStatement": {
+      "lloc": {
+         "1": 22
+      },
+      "cyclomatic": {
+         "0": 22
+      },
+      "operators": {
+         "[]": 22
+      },
+      "operands": {
+         "[]": 22
+      },
+      "ignoreKeys": {
+         "[]": 22
+      },
+      "newScope": {
+         "undefined": 22
+      },
+      "dependencies": {
+         "undefined": 22
+      }
+   },
+   "ForStatement": {
+      "lloc": {
+         "1": 3
+      },
+      "cyclomatic": {
+         "1": 3
+      },
+      "operators": {
+         "[{\"identifier\":\"for\"}]": 3
+      },
+      "operands": {
+         "[]": 3
+      },
+      "ignoreKeys": {
+         "[]": 3
+      },
+      "newScope": {
+         "undefined": 3
+      },
+      "dependencies": {
+         "undefined": 3
+      }
+   },
+   "Identifier": {
+      "lloc": {
+         "0": 124
+      },
+      "cyclomatic": {
+         "0": 124
+      },
+      "operators": {
+         "[]": 124
+      },
+      "operands": {
+         "[{}]": 124
+      },
+      "ignoreKeys": {
+         "[]": 124
+      },
+      "newScope": {
+         "undefined": 124
+      },
+      "dependencies": {
+         "undefined": 124
+      }
+   },
+   "IfStatement": {
+      "lloc": {
+         "1": 5,
+         "2": 1
+      },
+      "cyclomatic": {
+         "1": 6
+      },
+      "operators": {
+         "[{\"identifier\":\"if\"},{\"identifier\":\"else\"}]": 6
+      },
+      "operands": {
+         "[]": 6
+      },
+      "ignoreKeys": {
+         "[]": 6
+      },
+      "newScope": {
+         "undefined": 6
+      },
+      "dependencies": {
+         "undefined": 6
+      }
+   },
+   "Literal": {
+      "lloc": {
+         "0": 38
+      },
+      "cyclomatic": {
+         "0": 38
+      },
+      "operators": {
+         "[]": 38
+      },
+      "operands": {
+         "[{}]": 38
+      },
+      "ignoreKeys": {
+         "[]": 38
+      },
+      "newScope": {
+         "undefined": 38
+      },
+      "dependencies": {
+         "undefined": 38
+      }
+   },
+   "LogicalExpression": {
+      "lloc": {
+         "0": 2
+      },
+      "cyclomatic": {
+         "1": 2
+      },
+      "operators": {
+         "[{}]": 2
+      },
+      "operands": {
+         "[]": 2
+      },
+      "ignoreKeys": {
+         "[]": 2
+      },
+      "newScope": {
+         "undefined": 2
+      },
+      "dependencies": {
+         "undefined": 2
+      }
+   },
+   "MemberExpression": {
+      "lloc": {
+         "0": 27
+      },
+      "cyclomatic": {
+         "0": 27
+      },
+      "operators": {
+         "[{\"identifier\":\".\"}]": 27
+      },
+      "operands": {
+         "[]": 27
+      },
+      "ignoreKeys": {
+         "[]": 27
+      },
+      "newScope": {
+         "undefined": 27
+      },
+      "dependencies": {
+         "undefined": 27
+      }
+   },
+   "NewExpression": {
+      "lloc": {
+         "0": 2
+      },
+      "cyclomatic": {
+         "0": 2
+      },
+      "operators": {
+         "[{\"identifier\":\"new\"}]": 2
+      },
+      "operands": {
+         "[]": 2
+      },
+      "ignoreKeys": {
+         "[]": 2
+      },
+      "newScope": {
+         "undefined": 2
+      },
+      "dependencies": {
+         "undefined": 2
+      }
+   },
+   "ReturnStatement": {
+      "lloc": {
+         "1": 3
+      },
+      "cyclomatic": {
+         "0": 3
+      },
+      "operators": {
+         "[{\"identifier\":\"return\"}]": 3
+      },
+      "operands": {
+         "[]": 3
+      },
+      "ignoreKeys": {
+         "[]": 3
+      },
+      "newScope": {
+         "undefined": 3
+      },
+      "dependencies": {
+         "undefined": 3
+      }
+   },
+   "SwitchCase": {
+      "lloc": {
+         "1": 3
+      },
+      "cyclomatic": {
+         "0": 3
+      },
+      "operators": {
+         "[{}]": 3
+      },
+      "operands": {
+         "[]": 3
+      },
+      "ignoreKeys": {
+         "[]": 3
+      },
+      "newScope": {
+         "undefined": 3
+      },
+      "dependencies": {
+         "undefined": 3
+      }
+   },
+   "SwitchStatement": {
+      "lloc": {
+         "1": 1
+      },
+      "cyclomatic": {
+         "0": 1
+      },
+      "operators": {
+         "[{\"identifier\":\"switch\"}]": 1
+      },
+      "operands": {
+         "[]": 1
+      },
+      "ignoreKeys": {
+         "[]": 1
+      },
+      "newScope": {
+         "undefined": 1
+      },
+      "dependencies": {
+         "undefined": 1
+      }
+   },
+   "TemplateElement": {
+      "lloc": {
+         "0": 1
+      },
+      "cyclomatic": {
+         "0": 1
+      },
+      "operators": {
+         "[]": 1
+      },
+      "operands": {
+         "[{}]": 1
+      },
+      "ignoreKeys": {
+         "[]": 1
+      },
+      "newScope": {
+         "undefined": 1
+      },
+      "dependencies": {
+         "undefined": 1
+      }
+   },
+   "TemplateLiteral": {
+      "lloc": {
+         "0": 1
+      },
+      "cyclomatic": {
+         "0": 1
+      },
+      "operators": {
+         "[]": 1
+      },
+      "operands": {
+         "[]": 1
+      },
+      "ignoreKeys": {
+         "[]": 1
+      },
+      "newScope": {
+         "undefined": 1
+      },
+      "dependencies": {
+         "undefined": 1
+      }
+   },
+   "ThrowStatement": {
+      "lloc": {
+         "1": 2
+      },
+      "cyclomatic": {
+         "0": 2
+      },
+      "operators": {
+         "[{\"identifier\":\"throw\"}]": 2
+      },
+      "operands": {
+         "[]": 2
+      },
+      "ignoreKeys": {
+         "[]": 2
+      },
+      "newScope": {
+         "undefined": 2
+      },
+      "dependencies": {
+         "undefined": 2
+      }
+   },
+   "UnaryExpression": {
+      "lloc": {
+         "0": 3
+      },
+      "cyclomatic": {
+         "0": 3
+      },
+      "operators": {
+         "[{}]": 3
+      },
+      "operands": {
+         "[]": 3
+      },
+      "ignoreKeys": {
+         "[]": 3
+      },
+      "newScope": {
+         "undefined": 3
+      },
+      "dependencies": {
+         "undefined": 3
+      }
+   },
+   "UpdateExpression": {
+      "lloc": {
+         "0": 3
+      },
+      "cyclomatic": {
+         "0": 3
+      },
+      "operators": {
+         "[{}]": 3
+      },
+      "operands": {
+         "[]": 3
+      },
+      "ignoreKeys": {
+         "[]": 3
+      },
+      "newScope": {
+         "undefined": 3
+      },
+      "dependencies": {
+         "undefined": 3
+      }
+   },
+   "VariableDeclaration": {
+      "lloc": {
+         "0": 16
+      },
+      "cyclomatic": {
+         "0": 16
+      },
+      "operators": {
+         "[{}]": 16
+      },
+      "operands": {
+         "[]": 16
+      },
+      "ignoreKeys": {
+         "[]": 16
+      },
+      "newScope": {
+         "undefined": 16
+      },
+      "dependencies": {
+         "undefined": 16
+      }
+   },
+   "VariableDeclarator": {
+      "lloc": {
+         "1": 16
+      },
+      "cyclomatic": {
+         "0": 16
+      },
+      "operators": {
+         "[{\"identifier\":\"=\"}]": 16
+      },
+      "operands": {
+         "[]": 16
+      },
+      "ignoreKeys": {
+         "[]": 16
+      },
+      "newScope": {
+         "undefined": 16
+      },
+      "dependencies": {
+         "undefined": 16
+      }
+   }
+}

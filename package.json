@@ -1,0 +1,57 @@
+{
+  "name": "escomplex-plugin-syntax-babylon",
+  "version": "2.0.0",
+  "homepage": "https://github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon/",
+  "description": "Provides an ESComplex plugin which loads syntax definitions for trait resolution for unique Babylon AST not found in ESTree.",
+  "license": "MPL-2.0",
+  "main": "./dist/PluginSyntaxBabylon",
+  "author": {
+    "name": "Mike Leahy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon.git"
+  },
+  "maintainers": [
+    {
+      "name": "Mike Leahy",
+      "email": "support@typhonjs.io"
+    }
+  ],
+  "dependencies": {
+    "escomplex-core-commons": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-core-commons.git",
+    "escomplex-plugin-syntax-estree": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-estree.git"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.0",
+    "babel-plugin-module-alias": "^1.0.0",
+    "sort-object": "^3.0.0",
+    "typhonjs-ast-walker": "git+https://git@github.com/typhonjs-node-ast/typhonjs-ast-walker.git",
+    "typhonjs-config-eslint": "^0.4.0",
+    "typhonjs-npm-build-test": "^0.1.0"
+  },
+  "scripts": {
+    "build": "babel-node ./node_modules/typhonjs-npm-scripts-build-babel/scripts/build.js",
+    "esdoc": "esdoc -c .esdocrc",
+    "eslint": "eslint .",
+    "prepublish": "babel-node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js",
+    "test": "babel-node ./node_modules/typhonjs-npm-scripts-test-mocha/scripts/mocha.js",
+    "test-coverage": "babel-node ./node_modules/typhonjs-npm-scripts-test-mocha/scripts/mocha-istanbul.js"
+  },
+  "keywords": [
+    "escomplex",
+    "plugin",
+    "syntax",
+    "definitions",
+    "babylon"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "AUTHORS.md"
+  ],
+  "directories": {},
+  "bugs": {
+    "url": "https://github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon/issues"
+  }
+}
