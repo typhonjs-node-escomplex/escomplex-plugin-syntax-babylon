@@ -50,19 +50,19 @@ pluginData.forEach((plugin) =>
 
          test('plugin does not throw on proper event data', () =>
          {
-            assert.doesNotThrow(() => { instance.onLoadSyntax({ data: { settings: {} } }); });
+            assert.doesNotThrow(() => { instance.onLoadSyntax({ data: { settings: {}, syntaxes: {} } }); });
          });
 
          test('plugin passes back syntax data', () =>
          {
-            const event = { data: { settings: {} } };
+            const event = { data: { settings: {}, syntaxes: {} } };
             instance.onLoadSyntax(event);
             assert.isObject(event.data.syntaxes);
          });
 
          test('plugin has correct syntax data length', () =>
          {
-            const event = { data: { settings: {} } };
+            const event = { data: { settings: {}, syntaxes: {} } };
             instance.onLoadSyntax(event);
 
             // Note: that 60+ definitions are from `escomplex-plugin-syntax-estree`.
@@ -71,7 +71,7 @@ pluginData.forEach((plugin) =>
 
          test('plugin has correct syntax properties', () =>
          {
-            const event = { data: { settings: {} } };
+            const event = { data: { settings: {}, syntaxes: {} } };
             instance.onLoadSyntax(event);
 
             for (const type in event.data.syntaxes)
@@ -90,7 +90,7 @@ pluginData.forEach((plugin) =>
          test('verify espree results', () =>
          {
             const results = {};
-            const event = { data: { settings: {} } };
+            const event = { data: { settings: {}, syntaxes: {} } };
             instance.onLoadSyntax(event);
 
             walker.traverse(JSON.parse(fs.readFileSync('./test/fixture/espree-estree.json', 'utf8')),
