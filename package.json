@@ -2,7 +2,7 @@
   "name": "escomplex-plugin-syntax-babylon",
   "version": "0.0.1",
   "homepage": "https://github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon/",
-  "description": "Provides an ESComplex plugin which loads syntax definitions for trait resolution for unique Babylon AST not found in ESTree.",
+  "description": "Provides a plugin for typhonjs-escomplex module processing which loads syntax definitions for trait resolution for Babylon AST.",
   "license": "MPL-2.0",
   "main": "./dist/PluginSyntaxBabylon",
   "author": {
@@ -20,8 +20,8 @@
     }
   ],
   "dependencies": {
-    "escomplex-core-commons": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-core-commons.git",
-    "escomplex-plugin-syntax-estree": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-estree.git"
+    "escomplex-plugin-syntax-estree": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-estree.git",
+    "typhonjs-escomplex-commons": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-core-commons.git"
   },
   "devDependencies": {
     "sort-object": "^3.0.0",
@@ -38,6 +38,7 @@
     "test-coverage": "babel-node ./node_modules/typhonjs-npm-scripts-test-mocha/scripts/mocha-istanbul.js"
   },
   "keywords": [
+    "typhonjs",
     "escomplex",
     "plugin",
     "syntax",

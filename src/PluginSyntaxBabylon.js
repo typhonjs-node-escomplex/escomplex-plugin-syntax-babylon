@@ -1,7 +1,7 @@
 'use strict';
 
-import actualise              from 'escomplex-core-commons/src/traits/actualise.js';
-import safeName               from 'escomplex-core-commons/src/traits/safeName.js';
+import actualise              from 'typhonjs-escomplex-commons/src/traits/actualise.js';
+import safeName               from 'typhonjs-escomplex-commons/src/traits/safeName.js';
 
 import PluginSyntaxESTree     from 'escomplex-plugin-syntax-estree/src/PluginSyntaxESTree.js';
 

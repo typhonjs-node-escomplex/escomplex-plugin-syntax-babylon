@@ -6,11 +6,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _actualise = require('escomplex-core-commons/dist/traits/actualise.js');
+var _actualise = require('typhonjs-escomplex-commons/dist/traits/actualise.js');
 
 var _actualise2 = _interopRequireDefault(_actualise);
 
-var _safeName = require('escomplex-core-commons/dist/traits/safeName.js');
+var _safeName = require('typhonjs-escomplex-commons/dist/traits/safeName.js');
 
 var _safeName2 = _interopRequireDefault(_safeName);
 
