@@ -6,8 +6,10 @@ import safeName               from 'typhonjs-escomplex-commons/src/traits/safeNa
 import PluginSyntaxESTree     from 'escomplex-plugin-syntax-estree/src/PluginSyntaxESTree.js';
 
 /**
- * Provides an ESComplexModule plugin which loads syntax definitions for trait resolution for unique Babylon AST not
- * found in ESTree.
+ * Provides an typhonjs-escomplex-module / ESComplexModule plugin which loads syntax definitions for trait resolution
+ * for unique Babylon AST not found in ESTree.
+ *
+ * @see https://www.npmjs.com/package/typhonjs-escomplex-module
  */
 export default class PluginSyntaxBabylon extends PluginSyntaxESTree
 {
