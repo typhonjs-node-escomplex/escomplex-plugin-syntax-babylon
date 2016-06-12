@@ -45,6 +45,8 @@ var PluginSyntaxBabylon = function (_PluginSyntaxESTree) {
   _createClass(PluginSyntaxBabylon, [{
     key: 'BindExpression',
 
+    // Unique Babylon AST nodes --------------------------------------------------------------------------------------
+
     /**
      * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#bindexpression
      * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}

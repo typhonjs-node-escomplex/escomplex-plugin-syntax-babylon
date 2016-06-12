@@ -13,6 +13,8 @@ import PluginSyntaxESTree     from 'escomplex-plugin-syntax-estree/src/PluginSyn
  */
 export default class PluginSyntaxBabylon extends PluginSyntaxESTree
 {
+   // Unique Babylon AST nodes --------------------------------------------------------------------------------------
+
    /**
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#bindexpression
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
