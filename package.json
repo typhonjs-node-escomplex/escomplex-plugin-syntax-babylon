@@ -20,8 +20,8 @@
     }
   ],
   "dependencies": {
-    "escomplex-plugin-syntax-estree": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-plugin-syntax-estree.git",
-    "typhonjs-escomplex-commons": "git+https://git@github.com/typhonjs-node-escomplex/escomplex-core-commons.git"
+    "escomplex-plugin-syntax-estree": "^0.0.1",
+    "typhonjs-escomplex-commons": "^0.0.1"
   },
   "devDependencies": {
     "sort-object": "^3.0.0",
