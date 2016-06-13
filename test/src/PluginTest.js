@@ -7,17 +7,9 @@ import walker              from 'typhonjs-ast-walker';
 
 import PluginSyntaxBabylon from '../../src/PluginSyntaxBabylon.js';
 
-const s_PLUGIN_PATH =      '../../dist/PluginSyntaxBabylon';
-
-suite('NPM require plugin:', () =>
-{
-   test('require does not throw', () => { assert.doesNotThrow(() => { require(s_PLUGIN_PATH); }); });
-});
-
 const pluginData =
 [
-   { name: 'ESM', PluginClass: PluginSyntaxBabylon },
-   { name: 'NPM', PluginClass: require(s_PLUGIN_PATH) }
+   { name: 'ESM', PluginClass: PluginSyntaxBabylon }
 ];
 
 pluginData.forEach((plugin) =>
