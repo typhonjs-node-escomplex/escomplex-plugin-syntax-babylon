@@ -1,9 +1,9 @@
 'use strict';
 
-import actualize              from 'typhonjs-escomplex-commons/src/module/traits/actualize.js';
-import safeName               from 'typhonjs-escomplex-commons/src/module/traits/safeName.js';
+import PluginSyntaxESTree     from 'escomplex-plugin-syntax-estree/src/PluginSyntaxESTree';
 
-import PluginSyntaxESTree     from 'escomplex-plugin-syntax-estree/src/PluginSyntaxESTree.js';
+import actualize              from 'typhonjs-escomplex-commons/src/module/traits/actualize';
+import safeName               from 'typhonjs-escomplex-commons/src/module/traits/safeName';
 
 /**
  * Provides an typhonjs-escomplex-module / ESComplexModule plugin which loads syntax definitions for trait resolution

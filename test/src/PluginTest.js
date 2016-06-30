@@ -3,9 +3,9 @@
 import { assert }          from 'chai';
 import fs                  from 'fs';
 import sortObj             from 'sort-object';
-import walker              from 'typhonjs-ast-walker';
+import ASTWalker           from 'typhonjs-ast-walker/src/ASTWalker';
 
-import PluginSyntaxBabylon from '../../src/PluginSyntaxBabylon.js';
+import PluginSyntaxBabylon from '../../src/PluginSyntaxBabylon';
 
 const pluginData =
 [
@@ -85,7 +85,7 @@ pluginData.forEach((plugin) =>
             const event = { data: { settings: {}, syntaxes: {} } };
             instance.onLoadSyntax(event);
 
-            walker.traverse(JSON.parse(fs.readFileSync('./test/fixture/espree-estree.json', 'utf8')),
+            new ASTWalker().traverse(JSON.parse(fs.readFileSync('./test/fixture/espree-estree.json', 'utf8')),
             {
                enterNode: (node, parent) =>
                {

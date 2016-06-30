@@ -5,6 +5,7 @@
     "add-module-exports",
     ["module-alias",
       [
+        { "src": "npm:typhonjs-ast-walker/dist", "expose": "typhonjs-ast-walker/src" },
         { "src": "npm:typhonjs-escomplex-commons/dist", "expose": "typhonjs-escomplex-commons/src" },
         { "src": "npm:escomplex-plugin-syntax-estree/dist", "expose": "escomplex-plugin-syntax-estree/src" }
       ]
