@@ -99,8 +99,7 @@ pluginData.forEach((plugin) =>
                      {
                         if (typeof results[node.type][metric] === 'undefined') { results[node.type][metric] = {}; }
 
-                        const value = typeof syntax[metric] === 'function' ? syntax[metric](node, parent) :
-                         syntax[metric];
+                        const value = syntax[metric].valueOf(node, parent);
 
                         const valueKey = JSON.stringify(value);
 

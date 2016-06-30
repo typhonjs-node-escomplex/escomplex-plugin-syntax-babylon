@@ -1,7 +1,7 @@
 'use strict';
 
-import actualise              from 'typhonjs-escomplex-commons/src/traits/actualise.js';
-import safeName               from 'typhonjs-escomplex-commons/src/traits/safeName.js';
+import actualize              from 'typhonjs-escomplex-commons/src/module/traits/actualize.js';
+import safeName               from 'typhonjs-escomplex-commons/src/module/traits/safeName.js';
 
 import PluginSyntaxESTree     from 'escomplex-plugin-syntax-estree/src/PluginSyntaxESTree.js';
 
@@ -19,13 +19,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#bindexpression
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   BindExpression() { return actualise(0, 0); }
+   BindExpression() { return actualize(0, 0); }
 
    /**
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#booleanliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   BooleanLiteral() { return actualise(0, 0, undefined, (node) => { return node.value; }); }
+   BooleanLiteral() { return actualize(0, 0, undefined, (node) => { return node.value; }); }
 
    /**
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#classmethod
@@ -33,16 +33,16 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     */
    ClassMethod()
    {
-      return actualise(0, 0, (node) =>
-         {
-            const operators = ['function'];
-            if (node.kind && (node.kind === 'get' || node.kind === 'set')) { operators.push(node.kind); }
-            if (typeof node.static === 'boolean' && node.static) { operators.push('static'); }
-            return operators;
-         },
-         (node) => { return safeName(node.key); },
-         'key',   // Note: must skip key as the assigned name is forwarded on to FunctionExpression.
-         true
+      return actualize(0, 0, (node) =>
+       {
+          const operators = ['function'];
+          if (node.kind && (node.kind === 'get' || node.kind === 'set')) { operators.push(node.kind); }
+          if (typeof node.static === 'boolean' && node.static) { operators.push('static'); }
+          return operators;
+       },
+       (node) => { return safeName(node.key); },
+       'key',   // Note: must skip key as the assigned name is forwarded on to FunctionExpression.
+       'method'
       );
    }
 
@@ -50,13 +50,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#decorator
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   Decorator() { return actualise(0, 0); }
+   Decorator() { return actualize(0, 0); }
 
    /**
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#directive
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   Directive() { return actualise(1, 0); }
+   Directive() { return actualize(1, 0); }
 
    /**
     * Avoid conflicts between string literals and identifiers.
@@ -66,10 +66,10 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     */
    DirectiveLiteral()
    {
-      return actualise(0, 0, undefined, (node) =>
-         {
-            return typeof node.value === 'string' ? `"${node.value}"` : node.value;
-         }
+      return actualize(0, 0, undefined, (node) =>
+       {
+          return typeof node.value === 'string' ? `"${node.value}"` : node.value;
+       }
       );
    }
 
@@ -77,13 +77,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#nullliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   NullLiteral() { return actualise(0, 0, undefined, 'null'); }
+   NullLiteral() { return actualize(0, 0, undefined, 'null'); }
 
    /**
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#numericliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   NumericLiteral() { return actualise(0, 0, undefined, (node) => { return node.value; }); }
+   NumericLiteral() { return actualize(0, 0, undefined, (node) => { return node.value; }); }
 
    /**
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#objectmethod
@@ -91,13 +91,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     */
    ObjectMethod()
    {
-      return actualise(0, 0, (node) =>
-         {
-            return typeof node.kind === 'string' && (node.kind === 'get' || node.kind === 'set') ?
-             node.kind : undefined;
-         },
-         undefined,
-         'key'  // Note: must skip key as the assigned name is forwarded on to FunctionExpression.
+      return actualize(0, 0, (node) =>
+       {
+          return typeof node.kind === 'string' && (node.kind === 'get' || node.kind === 'set') ?
+           node.kind : undefined;
+       },
+       undefined,
+       'key'  // Note: must skip key as the assigned name is forwarded on to FunctionExpression.
       );
    }
 
@@ -109,11 +109,11 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     */
    ObjectProperty()
    {
-      return actualise(1, 0, (node) =>
-         {
-            return typeof node.shorthand === 'undefined' ? ':' :
-             typeof node.shorthand === 'boolean' && !node.shorthand ? ':' : undefined;
-         }
+      return actualize(1, 0, (node) =>
+       {
+          return typeof node.shorthand === 'undefined' ? ':' :
+           typeof node.shorthand === 'boolean' && !node.shorthand ? ':' : undefined;
+       }
       );
    }
 
@@ -121,13 +121,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#restproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   RestProperty() { return actualise(0, 0); }
+   RestProperty() { return actualize(0, 0); }
 
    /**
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#spreadproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   SpreadProperty() { return actualise(0, 0); }
+   SpreadProperty() { return actualize(0, 0); }
 
    /**
     * Avoid conflicts between string literals and identifiers.
@@ -135,5 +135,5 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#stringliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   StringLiteral() { return actualise(0, 0, undefined, (node) => { return `"${node.value}"`; }); }
+   StringLiteral() { return actualize(0, 0, undefined, (node) => { return `"${node.value}"`; }); }
 }

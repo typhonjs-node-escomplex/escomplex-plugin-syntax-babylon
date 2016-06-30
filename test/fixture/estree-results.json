@@ -7,7 +7,7 @@
          "0": 2
       },
       "operators": {
-         "[{\"identifier\":\"[]\"}]": 2
+         "[\"[]\"]": 2
       },
       "operands": {
          "[]": 2
@@ -30,7 +30,7 @@
          "0": 3
       },
       "operators": {
-         "[{\"identifier\":\"arrowfunction\"}]": 3
+         "[\"arrowfunction\"]": 3
       },
       "operands": {
          "[]": 3
@@ -39,7 +39,7 @@
          "[]": 3
       },
       "newScope": {
-         "true": 3
+         "\"method\"": 3
       },
       "dependencies": {
          "undefined": 3
@@ -53,7 +53,8 @@
          "0": 12
       },
       "operators": {
-         "[{}]": 12
+         "[\"=\"]": 10,
+         "[\"|=\"]": 2
       },
       "operands": {
          "[]": 12
@@ -76,7 +77,14 @@
          "0": 22
       },
       "operators": {
-         "[{}]": 22
+         "[\"===\"]": 5,
+         "[\"<\"]": 3,
+         "[\">\"]": 1,
+         "[\"%\"]": 1,
+         "[\"&\"]": 6,
+         "[\">>\"]": 3,
+         "[\"<<\"]": 2,
+         "[\"!==\"]": 1
       },
       "operands": {
          "[]": 22
@@ -122,7 +130,7 @@
          "0": 3
       },
       "operators": {
-         "[{\"identifier\":\"break\"}]": 3
+         "[\"break\"]": 3
       },
       "operands": {
          "[]": 3
@@ -145,7 +153,7 @@
          "0": 22
       },
       "operators": {
-         "[{\"identifier\":\"()\"}]": 22
+         "[\"()\"]": 22
       },
       "operands": {
          "[]": 22
@@ -168,7 +176,7 @@
          "1": 1
       },
       "operators": {
-         "[{\"identifier\":\":?\"}]": 1
+         "[\":?\"]": 1
       },
       "operands": {
          "[]": 1
@@ -191,7 +199,7 @@
          "0": 1
       },
       "operators": {
-         "[{\"identifier\":\"export\"},{\"identifier\":\"default\"}]": 1
+         "[\"export\",\"default\"]": 1
       },
       "operands": {
          "[]": 1
@@ -237,7 +245,7 @@
          "1": 3
       },
       "operators": {
-         "[{\"identifier\":\"for\"}]": 3
+         "[\"for\"]": 3
       },
       "operands": {
          "[]": 3
@@ -263,7 +271,34 @@
          "[]": 124
       },
       "operands": {
-         "[{}]": 124
+         "[\"polyBtoa\"]": 2,
+         "[\"array\"]": 13,
+         "[\"str\"]": 4,
+         "[\"s_BTOA_NEW_BINARY\"]": 2,
+         "[\"length\"]": 3,
+         "[\"j\"]": 5,
+         "[\"ch\"]": 3,
+         "[\"charCodeAt\"]": 1,
+         "[\"Error\"]": 1,
+         "[\"Array\"]": 1,
+         "[\"isArray\"]": 1,
+         "[\"TypeError\"]": 1,
+         "[\"answer\"]": 11,
+         "[\"a\"]": 6,
+         "[\"b\"]": 6,
+         "[\"c\"]": 7,
+         "[\"d\"]": 5,
+         "[\"i\"]": 13,
+         "[\"push\"]": 10,
+         "[\"s_BTOA_GET_CHAR\"]": 8,
+         "[\"join\"]": 1,
+         "[\"btoa\"]": 4,
+         "[\"self\"]": 6,
+         "[\"s_BTOA_BASE_64_CHARS\"]": 2,
+         "[\"val\"]": 2,
+         "[\"charAt\"]": 1,
+         "[\"len\"]": 2,
+         "[\"ret\"]": 3
       },
       "ignoreKeys": {
          "[]": 124
@@ -284,7 +319,8 @@
          "1": 6
       },
       "operators": {
-         "[{\"identifier\":\"if\"},{\"identifier\":\"else\"}]": 6
+         "[\"if\"]": 5,
+         "[\"if\",\"else\"]": 1
       },
       "operands": {
          "[]": 6
@@ -310,7 +346,22 @@
          "[]": 38
       },
       "operands": {
-         "[{}]": 38
+         "[\"\\\"string\\\"\"]": 1,
+         "[0]": 5,
+         "[255]": 1,
+         "[\"\\\"Not ascii. Base64.encode can only take ascii strings\\\"\"]": 1,
+         "[null]": 11,
+         "[3]": 3,
+         "[2]": 3,
+         "[63]": 2,
+         "[4]": 2,
+         "[1]": 1,
+         "[15]": 2,
+         "[6]": 1,
+         "[\"\\\"=\\\"\"]": 2,
+         "[\"\\\"\\\"\"]": 1,
+         "[\"\\\"object\\\"\"]": 1,
+         "[\"\\\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/\\\"\"]": 1
       },
       "ignoreKeys": {
          "[]": 38
@@ -330,7 +381,7 @@
          "1": 2
       },
       "operators": {
-         "[{}]": 2
+         "[\"&&\"]": 2
       },
       "operands": {
          "[]": 2
@@ -353,7 +404,7 @@
          "0": 27
       },
       "operators": {
-         "[{\"identifier\":\".\"}]": 27
+         "[\".\"]": 27
       },
       "operands": {
          "[]": 27
@@ -376,7 +427,7 @@
          "0": 2
       },
       "operators": {
-         "[{\"identifier\":\"new\"}]": 2
+         "[\"new\"]": 2
       },
       "operands": {
          "[]": 2
@@ -399,7 +450,7 @@
          "0": 3
       },
       "operators": {
-         "[{\"identifier\":\"return\"}]": 3
+         "[\"return\"]": 3
       },
       "operands": {
          "[]": 3
@@ -422,7 +473,7 @@
          "0": 3
       },
       "operators": {
-         "[{}]": 3
+         "[\"case\"]": 3
       },
       "operands": {
          "[]": 3
@@ -445,7 +496,7 @@
          "0": 1
       },
       "operators": {
-         "[{\"identifier\":\"switch\"}]": 1
+         "[\"switch\"]": 1
       },
       "operands": {
          "[]": 1
@@ -471,7 +522,7 @@
          "[]": 1
       },
       "operands": {
-         "[{}]": 1
+         "[\"polyBtoa error: 'array' is not an 'Array'.\"]": 1
       },
       "ignoreKeys": {
          "[]": 1
@@ -514,7 +565,7 @@
          "0": 2
       },
       "operators": {
-         "[{\"identifier\":\"throw\"}]": 2
+         "[\"throw\"]": 2
       },
       "operands": {
          "[]": 2
@@ -537,7 +588,8 @@
          "0": 3
       },
       "operators": {
-         "[{}]": 3
+         "[\"typeof (prefix)\"]": 2,
+         "[\"! (prefix)\"]": 1
       },
       "operands": {
          "[]": 3
@@ -560,7 +612,7 @@
          "0": 3
       },
       "operators": {
-         "[{}]": 3
+         "[\"++ (postfix)\"]": 3
       },
       "operands": {
          "[]": 3
@@ -583,7 +635,8 @@
          "0": 16
       },
       "operators": {
-         "[{}]": 16
+         "[\"const\"]": 9,
+         "[\"let\"]": 7
       },
       "operands": {
          "[]": 16
@@ -606,7 +659,7 @@
          "0": 16
       },
       "operators": {
-         "[{\"identifier\":\"=\"}]": 16
+         "[\"=\"]": 16
       },
       "operands": {
          "[]": 16
