@@ -16,19 +16,19 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    // Unique Babylon AST nodes --------------------------------------------------------------------------------------
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#bindexpression
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#bindexpression
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    BindExpression() { return actualize(0, 0); }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#booleanliteral
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#booleanliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    BooleanLiteral() { return actualize(0, 0, undefined, (node) => { return node.value; }); }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#classmethod
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#classmethod
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    ClassMethod()
@@ -47,13 +47,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#decorator
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#decorator
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    Decorator() { return actualize(0, 0); }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#directive
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#directive
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    Directive() { return actualize(1, 0); }
@@ -61,7 +61,7 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    /**
     * Avoid conflicts between string literals and identifiers.
     *
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#directiveliteral
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#directiveliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    DirectiveLiteral()
@@ -74,19 +74,19 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#nullliteral
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#nullliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    NullLiteral() { return actualize(0, 0, undefined, 'null'); }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#numericliteral
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#numericliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    NumericLiteral() { return actualize(0, 0, undefined, (node) => { return node.value; }); }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#objectmethod
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#objectmethod
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    ObjectMethod()
@@ -104,7 +104,7 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    /**
     * Note: that w/ ES6+ `:` may be omitted and the Property node defines `shorthand` to indicate this case.
     *
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#objectproperty
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#objectproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    ObjectProperty()
@@ -118,13 +118,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#restproperty
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#restproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    RestProperty() { return actualize(0, 0); }
 
    /**
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#spreadproperty
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#spreadproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    SpreadProperty() { return actualize(0, 0); }
@@ -132,7 +132,7 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    /**
     * Avoid conflicts between string literals and identifiers.
     *
-    * @see https://github.com/babel/babel/blob/master/doc/ast/spec.md#stringliteral
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#stringliteral
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
    StringLiteral() { return actualize(0, 0, undefined, (node) => { return `"${node.value}"`; }); }
