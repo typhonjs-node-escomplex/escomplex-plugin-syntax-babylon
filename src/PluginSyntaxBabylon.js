@@ -1,5 +1,3 @@
-'use strict';
-
 import PluginSyntaxESTree     from 'escomplex-plugin-syntax-estree/src/PluginSyntaxESTree';
 
 import actualize              from 'typhonjs-escomplex-commons/src/module/traits/actualize';
