@@ -30,7 +30,7 @@
          "0": 3
       },
       "operators": {
-         "[\"arrowfunction\"]": 3
+         "[\"function=>\"]": 3
       },
       "operands": {
          "[]": 3
