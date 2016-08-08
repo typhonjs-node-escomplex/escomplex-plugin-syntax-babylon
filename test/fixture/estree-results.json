@@ -39,7 +39,9 @@
          "[]": 3
       },
       "newScope": {
-         "\"method\"": 3
+         "{\"type\":\"method\",\"name\":\"<anonymous>\",\"lineStart\":11,\"lineEnd\":87,\"paramCount\":1}": 1,
+         "{\"type\":\"method\",\"name\":\"<anonymous>\",\"lineStart\":102,\"lineEnd\":105,\"paramCount\":1}": 1,
+         "{\"type\":\"method\",\"name\":\"<anonymous>\",\"lineStart\":107,\"lineEnd\":112,\"paramCount\":1}": 1
       },
       "dependencies": {
          "undefined": 3
