@@ -142,13 +142,13 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     * @see https://github.com/babel/babylon/blob/master/ast/spec.md#restproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   RestProperty() { return actualize(0, 0); }
+   RestProperty() { return actualize(0, 0, '... (rest)'); }
 
    /**
     * @see https://github.com/babel/babylon/blob/master/ast/spec.md#spreadproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
-   SpreadProperty() { return actualize(0, 0); }
+   SpreadProperty() { return actualize(0, 0, '... (spread)'); }
 
    /**
     * Avoid conflicts between string literals and identifiers.
