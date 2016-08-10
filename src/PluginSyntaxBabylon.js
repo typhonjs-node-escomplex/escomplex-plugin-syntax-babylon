@@ -139,6 +139,25 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    }
 
    /**
+    * @see https://github.com/babel/babylon/blob/master/ast/spec.md#regexpliteral
+    * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
+    */
+   RegExpLiteral()
+   {
+      return actualize(0, 0, void 0, (node) =>
+      {
+         const operands = [];
+
+         if (typeof node.extra === 'object' && typeof node.extra.raw !== 'undefined')
+         {
+            operands.push(node.extra.raw);
+         }
+
+         return operands;
+      });
+   }
+
+   /**
     * @see https://github.com/babel/babylon/blob/master/ast/spec.md#restproperty
     * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
     */
