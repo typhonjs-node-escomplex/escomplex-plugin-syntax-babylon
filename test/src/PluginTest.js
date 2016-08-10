@@ -58,7 +58,7 @@ pluginData.forEach((plugin) =>
             instance.onLoadSyntax(event);
 
             // Note: that 60+ definitions are from `escomplex-plugin-syntax-estree`.
-            assert.strictEqual(Object.keys(event.data.syntaxes).length, 76);
+            assert.strictEqual(Object.keys(event.data.syntaxes).length, 77);
          });
 
          test('plugin has correct syntax properties', () =>
