@@ -29,12 +29,12 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
     */
    BooleanLiteral() { return actualize(0, 0, undefined, (node) => { return node.value; }); }
 
-   ///**
+   // /**
    // * @see https://github.com/babel/babylon/blob/master/ast/spec.md#classmethod
    // * @returns {{lloc: *, cyclomatic: *, operators: *, operands: *, ignoreKeys: *, newScope: *, dependencies: *}}
    // */
-   //ClassMethod()
-   //{
+   // ClassMethod()
+   // {
    //   return actualize(1, 0, (node) =>
    //      {
    //         const operators = typeof node.computed === 'boolean' && node.computed ?
@@ -75,7 +75,7 @@ export default class PluginSyntaxBabylon extends PluginSyntaxESTree
    //            paramCount: node.params.length
    //         };
    //      });
-   //}
+   // }
 
    /**
     * Note: logical SLOC for the method declaration should be incremented by the module metric processor.
