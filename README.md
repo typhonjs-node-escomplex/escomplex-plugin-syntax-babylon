@@ -8,6 +8,6 @@
 
 [![Build Status](https://travis-ci.org/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon.svg?branch=master)](https://travis-ci.org/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon)
 [![Coverage](https://img.shields.io/codecov/c/github/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon.svg)](https://codecov.io/github/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon)
-[![Dependency Status](https://www.versioneye.com/user/projects/575e3aba7757a00034dc5469/badge.svg?style=flat)](https://www.versioneye.com/user/projects/575e3aba7757a00034dc5469)
+[![Dependency Status](https://david-dm.org/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon/status.svg)](https://david-dm.org/typhonjs-node-escomplex/escomplex-plugin-syntax-babylon)
 
 Provides a plugin for typhonjs-escomplex module processing which loads syntax definitions for trait resolution for Babylon AST.
